@@ -38,11 +38,7 @@ Created a pivot table to quickly calculate and visualize the data, and calculate
 The average ride length time for the 2 different categories of riders (annual members and casual riders). For casual riders, the average ride_length value was 0:17:38 (17 minutes, 38 seconds) and for annual members, the average ride_length value was 0:10:24 (10 minutes, 24 seconds). 
 The average ride length time for the 2 different categories of riders, based on the days of the week. A copy of the pivot table is provided below:
 
-
-
-
- 
-
+![Pivot Table] (https://user-images.githubusercontent.com/121268398/231094017-a853ce2b-871c-41ea-8eb5-802f548e4780.png)
 
 
 
@@ -266,29 +262,17 @@ write.csv(counts, file = '~/Downloads/Divvy_Exercise/avg_ride_length.csv')
 
 
 
-
-
-
-
-
-
-
-
-
 ## **SHARE**
 Provided below are the two data visualization charts created by the R script:
-Table 1: Annual Member and Casual Rider Average Number of Rides, Based on Days of Week
+### **Table 1: Annual Member and Casual Rider Average Number of Rides, Based on Days of Week**
+
+![Table 1: Annual Member and Casual Rider Average Number of Rides, Based on Days of Week] (https://user-images.githubusercontent.com/121268398/231095024-7483be05-2c66-40ee-acff-d0b066e7b1ba.png)
 
 
 
+### **Table 2: Annual Member and Casual Rider Average Trip Duration, Based on Days of Week**
 
-
-
-
-Table 2: Annual Member and Casual Rider Average Trip Duration, Based on Days of Week
-
-
-
+![Table 2: Annual Member and Casual Rider Average Trip Duration, Based on Days of Week] (https://user-images.githubusercontent.com/121268398/231095063-a67db612-d54b-4d96-bd9c-a1c26bfae58d.png)
 
 
 
