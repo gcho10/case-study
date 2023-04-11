@@ -1,24 +1,22 @@
-# case-study-1
-Google Data Analytics Capstone Project
-Geoffrey Cho
-Google Data Analytics Capstone Project
+# Case Study: How Does a Bike-Share Navigate Speedy Success?
 
-Case Study: How Does a Bike-Share Navigate Speedy Success?
+## Google Data Analytics Capstone Project
+## Geoffrey Cho
 
-Scenario: You are a junior data analyst working in the marketing analyst team at Cyclistic, a bike-share company in Chicago. The director of marketing believes the company’s future success depends on maximizing the number of annual memberships. Therefore, your team wants to understand how casual riders and annual members use Cyclistic bikes differently. From these insights, your team will design a new marketing strategy to convert casual riders into annual members. But first, Cyclistic executives must approve your recommendations, so they must be backed up with compelling data insights and professional data visualizations.
+**Scenario**: You are a junior data analyst working in the marketing analyst team at Cyclistic, a bike-share company in Chicago. The director of marketing believes the company’s future success depends on maximizing the number of annual memberships. Therefore, your team wants to understand how casual riders and annual members use Cyclistic bikes differently. From these insights, your team will design a new marketing strategy to convert casual riders into annual members. But first, Cyclistic executives must approve your recommendations, so they must be backed up with compelling data insights and professional data visualizations.
 
-About the company: In 2016, Cyclistic launched a successful bike-share offering. Since then, the program has grown to a fleet of 5,824 bicycles that are geotracked and locked into a network of 692 stations across Chicago. The bikes can be unlocked from one station and returned to any other station in the system anytime. Until now, Cyclistic’s marketing strategy relied on building general awareness and appealing to broad consumer segments. One approach that helped make these things possible was the flexibility of its pricing plans: single-ride passes, full-day passes, and annual memberships. Customers who purchase single-ride or full-day passes are referred to as casual riders. Customers who purchase annual memberships are Cyclistic members. Cyclistic’s finance analysts have concluded that annual members are much more profitable than casual riders. Although the pricing flexibility helps Cyclistic attract more customers, Moreno believes that maximizing the number of annual members will be key to future growth. Rather than creating a marketing campaign that targets all-new customers, Moreno believes there is a very good chance to convert casual riders into members. She notes that casual riders are already aware of the Cyclistic program and have chosen Cyclistic for their mobility needs. Moreno has set a clear goal: Design marketing strategies aimed at converting casual riders into annual members. In order to do that, however, the marketing analyst team needs to better understand how annual members and casual riders differ, why casual riders would buy a membership, and how digital media could affect their marketing tactics. Moreno and her team are interested in analyzing the Cyclistic historical bike trip data to identify trends.
+**About the company**: In 2016, Cyclistic launched a successful bike-share offering. Since then, the program has grown to a fleet of 5,824 bicycles that are geotracked and locked into a network of 692 stations across Chicago. The bikes can be unlocked from one station and returned to any other station in the system anytime. Until now, Cyclistic’s marketing strategy relied on building general awareness and appealing to broad consumer segments. One approach that helped make these things possible was the flexibility of its pricing plans: single-ride passes, full-day passes, and annual memberships. Customers who purchase single-ride or full-day passes are referred to as casual riders. Customers who purchase annual memberships are Cyclistic members. Cyclistic’s finance analysts have concluded that annual members are much more profitable than casual riders. Although the pricing flexibility helps Cyclistic attract more customers, Moreno believes that maximizing the number of annual members will be key to future growth. Rather than creating a marketing campaign that targets all-new customers, Moreno believes there is a very good chance to convert casual riders into members. She notes that casual riders are already aware of the Cyclistic program and have chosen Cyclistic for their mobility needs. Moreno has set a clear goal: Design marketing strategies aimed at converting casual riders into annual members. In order to do that, however, the marketing analyst team needs to better understand how annual members and casual riders differ, why casual riders would buy a membership, and how digital media could affect their marketing tactics. Moreno and her team are interested in analyzing the Cyclistic historical bike trip data to identify trends.
 
-ASK
+## **ASK** 
 Business task: 
 To understand how annual members and casual riders differ, in order to design marketing strategies aimed at converting casual riders into annual members.
 
-PREPARE
+## **PREPARE**
 Data made available by Motivate International Inc. (under a specific license), which is Cyclistic’s public, historical trip data that can be used to explore how different customer types are using the bikes. Due to data-privacy issues, however, riders’ personally identifiable information is off-limits; in other words, pass purchases cannot be connected to credit card numbers to see if casual riders live in the Cyclistic service area or if they purchased multiple single passes. 
 
 Although there were slight variations in column names throughout all of the tables, the key information/column names remained relatively the same: start and end station, the times that the ride started and ended, whether the rider was a member or casual, in addition to the starting and ending longitude and latitude. 
 
-PROCESS
+## **PROCESS**
 Downloaded the previous 12 months of Cyclistic trip data from: https://divvy-tripdata.s3.amazonaws.com/index.html
 Turned the unzipped .csv files into Excel Workbook files, which ran from February 2023 to March 2022.
 
@@ -28,10 +26,7 @@ Created a new column/metric called “ride_length” that calculated the length 
 Created a new column/metric called “day_of_week” that calculated the day of the week, noting that 1 = Sunday and 7 = Saturday, using the “WEEKDAY” command.
 
 
-
-
-
-ANALYZE
+## **ANALYZE**
 Cleaned data to prepare for analysis by filtering for and deleting rows with blank cells and cells with invalid values or values that don’t make sense, such as ride_length values over 24 hours long.
 
 Ran a couple of calculations in one file (“Feb2023-divvy-tripdata.xslx”) in order to get a better sense of the data layout, and created new metrics such as:
@@ -43,114 +38,7 @@ Created a pivot table to quickly calculate and visualize the data, and calculate
 The average ride length time for the 2 different categories of riders (annual members and casual riders). For casual riders, the average ride_length value was 0:17:38 (17 minutes, 38 seconds) and for annual members, the average ride_length value was 0:10:24 (10 minutes, 24 seconds). 
 The average ride length time for the 2 different categories of riders, based on the days of the week. A copy of the pivot table is provided below:
 
-Average of ride_length
-Day of the Week
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-Member Type
-1
-2
-3
-4
-5
-6
-7
-Weekly Average
-casual
-0:23:01
-0:16:36
-0:13:55
-0:12:29
-0:14:45
-0:15:47
-0:19:54
-0:17:38
-member
-0:12:26
-0:10:02
-0:09:49
-0:09:38
-0:09:37
-0:09:53
-0:11:50
-0:10:24
-Daily Average
-0:15:58
-0:11:24
-0:10:34
-0:10:06
-0:10:26
-0:10:58
-0:14:09
-0:11:59
-
-
-The number of rides for the 2 different categories of riders, based on the days of the week. A copy of the pivot table is provided below:
-
-Count of ride_id
-Day of the Week
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Member Type
-1
-2
-3
-4
-5
-6
-7
-Weekly Total
-casual
-7987
-5101
-5072
-3414
-2738
-3099
-5364
-32775
-member
-15977
-19458
-22996
-16926
-14465
-13641
-13319
-116782
-Daily Total
-23964
-24559
-28068
-20340
-17203
-16740
-18683
-149557
 
 
  
@@ -170,6 +58,7 @@ library(ggplot2)  #helps visualize data
 getwd() #displays working directory
 setwd("/Users/geoffreycho/Downloads") #sets working directory to simplify calls to data
 
+```
 #=====================
 COLLECT DATA
 #=====================
@@ -372,6 +261,7 @@ all_trips_v2 %>%
 
 counts <- aggregate(all_trips_v2$ride_length ~ all_trips_v2$member_casual + all_trips_v2$day_of_week, FUN = mean)
 write.csv(counts, file = '~/Downloads/Divvy_Exercise/avg_ride_length.csv')
+```
 
 
 
@@ -385,8 +275,7 @@ write.csv(counts, file = '~/Downloads/Divvy_Exercise/avg_ride_length.csv')
 
 
 
-
-SHARE
+## **SHARE**
 Provided below are the two data visualization charts created by the R script:
 Table 1: Annual Member and Casual Rider Average Number of Rides, Based on Days of Week
 
@@ -404,13 +293,13 @@ Table 2: Annual Member and Casual Rider Average Trip Duration, Based on Days of 
 
 
 
-ACT
-Key Findings:
+## **ACT**
+**Key Findings**:
 Annual members account for a higher share of ride counts compared to casual riders, especially so during the weekdays. This likely means that annual members live within the vicinity of the city/bike docking stations and utilize the bikes as a means of transportation to work.
 For casual riders, ride counts increase during the weekends compared to the weekdays; for annual members, ride counts increase significantly more during the weekdays and decrease during weekends. Again, this likely points to annual members viewing the bikes as more of a means of transportation, whereas casual riders probably view the bikes as more of a leisure activity/recreational rental for the weekends.
 When renting the bikes, casual riders use them for much longer than annual members, across all days of the week. In fact, on average, casual riders’ ride lengths are three times longer than annual members. 
 
-Deliverables for Moreno and the executive team (keeping the business task of converting casual riders to annual members in mind):
+**Deliverables for Moreno and the executive team (keeping the business task of converting casual riders to annual members in mind)**:
 The findings point towards casual riders likely viewing the bikes as more of a leisure activity than a mode of transportation; in addition, casual riders on average ride the bikes for longer than annual members-who view the bikes as more of a mode of transportation. Therefore, the marketing/pricing strategy could be more catered towards incentivizing longer bike rides, which could mean offering discounts on either ride prices or annual membership costs after a certain amount of distance traveled.
 Casual riders use the bikes for much longer than annual members, per bike ride. Therefore, Cyclistic could offer discounts based on the trip duration time, or some other marketing strategy aimed at incentivizing riders who go on longer bike rides to convert to being an annual member.
 Cyclistic’s flexibility in terms of its pricing plans have served the company well thus far, and a little more flexibility could also benefit them even further. Because casual riders use the bikes more on the weekends than weekdays, Cyclistic could offer an additional membership/subscription plan for the weekends, which would give riders a solid middle option between full day passes and annual memberships.
